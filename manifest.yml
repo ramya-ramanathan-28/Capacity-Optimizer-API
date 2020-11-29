@@ -1,0 +1,10 @@
+applications:
+ - name: CapacityOptimizer # name your app whatever you'd like
+   random-route: true
+   memory: 256M # can adjust this based on your service 
+   command: python run.py
+   ports:
+      5000:
+      exposed: true
+      publish: true
+      protocol: tcp
